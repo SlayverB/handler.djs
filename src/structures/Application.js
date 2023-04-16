@@ -69,6 +69,10 @@ class Application extends Base {
     })
   };
 
+  getCommand(name) {
+    return this["_command$"].get(name);
+  }
+
   async _build() {
       if (!this.client) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "Client", "parameters", true);
       if (!this.commandsPath) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "commandsPath","parameters", true);
