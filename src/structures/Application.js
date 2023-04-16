@@ -72,12 +72,12 @@ class Application extends Base {
   async _build() {
       if (!this.client) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "Client", "parameters", true);
       if (!this.commandsPath) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "commandsPath","parameters", true);
-      if (!this.EventsPath) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "EventsPath", "parameters", true);
+      // if (!this.EventsPath) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "EventsPath", "parameters", true);
       if (!(this.client instanceof Client)) throw new DiscordjsTypeError(ErrorCodes.InvalidType, "Client", " discord.js Client");
       if (!this.client.user) throw new DiscordjsTypeError(ErrorCodes.TokenMissing);
       
       await fs.readdirSync(this.commandsPath);
-      await fs.readdirSync(this.EventsPath);
+      // await fs.readdirSync(this.EventsPath);
       if (this.validationPath) await fs.readdirSync(this.validationPath);
     
       this.paths.commandsPath = this.commandsPath;

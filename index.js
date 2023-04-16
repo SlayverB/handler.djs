@@ -7,7 +7,6 @@ client.app = new Application({
   client: client,
   commandsPath: path.join(__dirname, "./commands"),
   validationPath: path.join(__dirname, "./validation"),
-  EventsPath: "./commands",
   owners: ["860865950945378325"],
 });
 

@@ -1,5 +1,5 @@
 {
-  "name": "djs-handler",
+  "name": "Handler.djs",
   "version": "1.0.0",
   "description": "A simple package discord handler",
   "main": "index.js",
