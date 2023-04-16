@@ -17,7 +17,7 @@ client.app.setCooldown({
   reference: true,
   long: true,
   Mdelete: "3s"
-});
+})
 
 client.on("ready", async () => {
  client.app.build(); 

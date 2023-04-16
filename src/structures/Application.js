@@ -53,10 +53,6 @@ class Application extends Base {
     return this;
   };
 
-  async setBaseReply(Object) {
-    
-  }
-
   async build() {
    await this._build();
    const commands = await readCommands(this.paths.commandsPath);
