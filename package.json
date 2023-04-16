@@ -3,7 +3,7 @@
   "version": "1.0.6",
   "description": "A package to manage all discord bot Files",
   "types": "src/@types/index.d.ts",
-  "author": "ZIAD",
+  "author": "Ziath#1768 <zemad3040@gmail.com>",
   "keywords": [
     "discord.js",
     "discord-handler",
