@@ -1,0 +1,19 @@
+{
+  "name": "djs-handler",
+  "version": "1.0.0",
+  "description": "A simple package discord handler",
+  "main": "index.js",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "fs": "^0.0.2",
+    "ms": "^2.1.3",
+    "nodemon": "^2.0.22"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=16.x"
+  },
+  "license": "MIT"
+}
