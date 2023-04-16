@@ -73,7 +73,7 @@ async function run() {
 
 # validation setUp
 ```js
-const { Validation } = require('../src/index.js');
+const { Validation } = require('handler.djs');
 
 module.exports = new Validation()
 .setCommnads(["all"]) // all commands or select only unique commands ["ping"]
