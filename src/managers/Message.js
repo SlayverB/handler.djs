@@ -35,7 +35,7 @@ module.exports.HandleMessage = async function (message, client, main) {
    if (cooldownConfig && cooldownConfig.Mdelete) return await main.sendTimedMessage(message, {content}, cooldownConfig.reference, cooldownConfig.Mdelete)
    else return (cooldownConfig && cooldownConfig.reference)? message.reply({content}) : message.channel.send({content})
 
-  } else {
+  } else if (!main.owners.includes(message.author.id)) {
     const collection = cooldown.collection;
     collection.set(key, {
       Timer: Date.now() + cooldown.timer

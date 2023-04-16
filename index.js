@@ -8,7 +8,7 @@ client.app = new Application({
   commandsPath: path.join(__dirname, "./commands"),
   validationPath: path.join(__dirname, "./validation"),
   EventsPath: "./commands",
-  owners: [""],
+  owners: ["860865950945378325"],
 });
 
 client.app.setPrefix("!");

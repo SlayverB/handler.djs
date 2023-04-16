@@ -1,8 +1,8 @@
 const { Validation } = require('../src/index.js');
 
 module.exports = new Validation()
-.setCommnads(["ping"])
+.setCommnads(["all"])
 .setExecution( (message, next) => {
-  message.data.set("name", "hello")
-  if (message.data) next()
+   if (message.content.includes("password")) return next()
+   else message.reply({content: "bruuh"});
 })

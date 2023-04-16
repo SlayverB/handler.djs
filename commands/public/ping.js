@@ -8,11 +8,10 @@ module.exports = new Command()
 .setCooldown("10s")
 .setPermissions(["SendMessages"])
 .setExecution(run)
-.setCategory("Fun")
+.setCategory("auto")
+.setOwners(true)
 
 async function run() {
   const { message, client, args } = this;
-  
-  console.log(message.data.get("name"))
   message.reply({content: "done"});
 }
