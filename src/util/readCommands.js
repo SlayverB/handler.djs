@@ -32,7 +32,7 @@ module.exports = async function(pathManeger) {
       path: file,
     };
     
-    if (commands.find(e => e.name.toLoweCase() === cmd.name.toLoweCase()  && cmd.disabed === false)) throw new DiscordjsTypeError(ErrorCodes.InvalidType, `${file}`, "repeated command", true) 
+    if (commands.find(e => e.name.toLowerCase() === cmd.name.toLoweCase()  && cmd.disabed === false)) throw new DiscordjsTypeError(ErrorCodes.InvalidType, `${file}`, "repeated command", true) 
     commands.push(command);
     
   }
