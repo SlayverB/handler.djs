@@ -1,8 +1,10 @@
 {
   "name": "Handler.djs",
   "version": "1.0.0",
-  "description": "A simple package discord handler",
-  "main": "index.js",
+  "description": "A package to manage all discord bot Files",
+  "author": "ZIAD",
+  "keywords": ["discord.js", "discord-handler", "handler", "djs-handler", "djs-commander", "djs", "Handler.djs", "Handler.js", "ZIATH", "DIscordbot", "discord handler"],
+  "main": "src/index.js",
   "dependencies": {
     "discord.js": "^14.9.0",
     "fs": "^0.0.2",
@@ -10,10 +12,18 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node src/index.js"
   },
   "engines": {
     "node": ">=16.x"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziad-gg/"
+  },
+  "bugs": {
+    "url": "https://github.com/ziad-gg/"
+  },
+  "homepage": "https://github.com/ziad-gg/",
   "license": "MIT"
 }
