@@ -56,6 +56,7 @@ class Application extends Base {
   async build() {
    await this._build();
    const commands = await readCommands(this.paths.commandsPath);
+   this._patch(this.main, "app_commands", commands);
    commands.forEach(cmd => this["_command$"].set(cmd.name.toLowerCase(), cmd));
    this._patch(this.main, "valids", []);
    if (this.validationPath) await readValidation(this.validationPath, this.main);
