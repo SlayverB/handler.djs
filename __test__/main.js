@@ -1,5 +1,1 @@
-const { Application } = require("discord.js");
-
-new Application({
-    client
-})
+const { Client, GatewayIntentBits } = require('discord.js');
