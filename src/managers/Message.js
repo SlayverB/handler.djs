@@ -53,6 +53,7 @@ module.exports.HandleMessage = async function (message, client, main) {
  if (!main.valids || main.valids.length === 0) return next();
  for await (const valid of main.valids) {
   if (valid.commands.includes(command.name.toLowerCase()) || valid.commands.includes("all")) return await valid.execution(message, next);
+  else next()
  };
  
 }
