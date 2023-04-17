@@ -53,7 +53,7 @@ declare module "handler.djs" {
 
   class Application extends Base {
     constructor({client: Client, commandsPath: String, EventsPath: String, validationPath: String, owners: Array });
-    public commands: Array<CommandStructur>
+    public app_commands: Array<CommandStructur>
     readonly prefix: String
     public setPrefix(prefix: String): Application;
     public setCooldown({message: String, reference: boolean, long: Boolean, Mdelete: string }): Application;
