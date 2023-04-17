@@ -1,6 +1,6 @@
 import { Client, Message, PermissionFlags } from 'discord.js';
 
-export interface Application {
+interface Application {
   public setPrefix(prefix: String): Application;
   public setCooldown({message: String, reference: boolean, long: Boolean, Mdelete: string }): Application;
   public build(): Application;
@@ -10,7 +10,7 @@ export interface Application {
   private _build(): Application
 }
 
-export interface Command {
+interface Command {
   public setName(name: string): Command;
   public setDescription(description: String): Command;
   public setUsage(usage: (Array | string)): Command;
@@ -23,7 +23,7 @@ export interface Command {
   public setCategory(name: String): Command;
 }
 
-export interface Validation {
+interface Validation {
   public setCommnads(commands: (Array<string> | string)): Validation;
   public setExecution(executionFunction: Function): Validation;
 }

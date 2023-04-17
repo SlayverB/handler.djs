@@ -20,7 +20,7 @@
   "main": "src/index.js",
   "dependencies": {
     "discord.js": "^14.9.0",
-    "handler.djs": "^1.1.3",
+    "handler.djs": "^1.1.5",
     "ms": "^2.1.3"
   },
   "scripts": {
